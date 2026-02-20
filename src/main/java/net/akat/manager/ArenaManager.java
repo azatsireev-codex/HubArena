@@ -117,6 +117,18 @@ public class ArenaManager {
                 playerLoc.getZ() >= minZ && playerLoc.getZ() <= maxZ;
     }
 
+    public boolean isPlayerInArenaXZ(Player player) {
+        Location playerLoc = player.getLocation();
+
+        double minX = Math.min(corner1.getX(), corner2.getX());
+        double maxX = Math.max(corner1.getX(), corner2.getX());
+        double minZ = Math.min(corner1.getZ(), corner2.getZ());
+        double maxZ = Math.max(corner1.getZ(), corner2.getZ());
+
+        return playerLoc.getX() >= minX && playerLoc.getX() <= maxX &&
+                playerLoc.getZ() >= minZ && playerLoc.getZ() <= maxZ;
+    }
+
     public boolean isPlayerOutsideArenaWithBuffer(Player player, double bufferDistance) {
         Location playerLoc = player.getLocation();
 

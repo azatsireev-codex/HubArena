@@ -32,7 +32,7 @@ public class ArenaMoveListener implements Listener {
         if (to == null) return;
 
         boolean inPVP = arenaManager.isInPVPMode(player);
-        boolean inArenaXZ = isInArenaXZ(player);
+        boolean inArenaXZ = arenaManager.isPlayerInArenaXZ(player);
 
         long now = System.currentTimeMillis();
         UUID uuid = player.getUniqueId();
@@ -101,18 +101,5 @@ public class ArenaMoveListener implements Listener {
         }
         arenaManager.teleportPlayerToRandomLocation(player);
         lastTeleportTime.put(uuid, currentTime);
-    }
-
-    // Проверка арены только по X и Z (игнорируем Y)
-    private boolean isInArenaXZ(Player player) {
-        Location loc = player.getLocation();
-
-        double minX = Math.min(arenaManager.getCorner1().getX(), arenaManager.getCorner2().getX());
-        double maxX = Math.max(arenaManager.getCorner1().getX(), arenaManager.getCorner2().getX());
-        double minZ = Math.min(arenaManager.getCorner1().getZ(), arenaManager.getCorner2().getZ());
-        double maxZ = Math.max(arenaManager.getCorner1().getZ(), arenaManager.getCorner2().getZ());
-
-        return loc.getX() >= minX && loc.getX() <= maxX &&
-                loc.getZ() >= minZ && loc.getZ() <= maxZ;
     }
 }
