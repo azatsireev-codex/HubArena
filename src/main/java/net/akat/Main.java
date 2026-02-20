@@ -60,6 +60,7 @@ public class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ArenaEventListener(), this);
         getServer().getPluginManager().registerEvents(new PvPArenaListener(), this);
         getServer().getPluginManager().registerEvents(new ArenaMoveListener(), this);
+        getServer().getPluginManager().registerEvents(new ArenaFlightListener(), this);
         getServer().getPluginManager().registerEvents(new EntityProtectionListener(), this);
         getServer().getPluginManager().registerEvents(new PVPCommandBlocker(), this);
 

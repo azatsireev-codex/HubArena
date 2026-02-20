@@ -23,7 +23,7 @@ public class FlyCommand implements CommandExecutor {
         }
 
         boolean inPvpMode = Main.getInstance().getArenaManager().isInPVPMode(player);
-        boolean inArena = Main.getInstance().getArenaManager().isPlayerInArena(player);
+        boolean inArena = Main.getInstance().getArenaManager().isPlayerInArenaXZ(player);
 
         if (inPvpMode || inArena) {
             player.sendMessage("§cНа PVP арене использовать /fly нельзя.");
