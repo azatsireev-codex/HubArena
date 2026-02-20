@@ -2,6 +2,7 @@ package net.akat;
 
 import net.akat.api.AkatPointaucAPI;
 import net.akat.api.http.BalanceHttpClient;
+import net.akat.command.FlyCommand;
 import net.akat.command.PVPCommand;
 import net.akat.command.ReloadConfigCommand;
 import net.akat.listener.*;
@@ -53,6 +54,7 @@ public class Main extends JavaPlugin {
         rewardManager = new RewardManager();
 
         getCommand("pvp").setExecutor(new PVPCommand());
+        getCommand("fly").setExecutor(new FlyCommand());
         getCommand("reloadconfig").setExecutor(new ReloadConfigCommand());
 
         getServer().getPluginManager().registerEvents(new ArenaEventListener(), this);

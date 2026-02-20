@@ -8,4 +8,5 @@ depend:
   - PlaceholderAPI
 commands:
   pvp:
+  fly:
   reloadconfig:
