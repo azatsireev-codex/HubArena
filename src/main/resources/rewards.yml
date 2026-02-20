@@ -1,0 +1,63 @@
+rewards:
+  0:
+    helmet: null
+    chestplate: null
+    leggings: null
+    boots: null
+
+    items:
+      - type: WOODEN_SWORD
+  1:
+    helmet:
+      type: LEATHER_HELMET
+    chestplate:
+      type: LEATHER_CHESTPLATE
+    leggings:
+      type: LEATHER_LEGGINGS
+    boots:
+      type: LEATHER_BOOTS
+
+    items:
+      - type: WOODEN_SWORD
+      - type: BREAD
+        amount: 5
+      - type: GOLDEN_APPLE
+        amount: 1
+
+  2:
+    helmet:
+      type: IRON_HELMET
+    chestplate:
+      type: IRON_CHESTPLATE
+    leggings:
+      type: IRON_LEGGINGS
+    boots:
+      type: IRON_BOOTS
+
+    items:
+      - type: STONE_SWORD
+      - type: COOKED_BEEF
+        amount: 8
+      - type: GOLDEN_APPLE
+        amount: 2
+
+  3:
+    helmet:
+      type: DIAMOND_HELMET
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+    chestplate:
+      type: DIAMOND_CHESTPLATE
+    leggings:
+      type: DIAMOND_LEGGINGS
+    boots:
+      type: DIAMOND_BOOTS
+
+    items:
+      - type: DIAMOND_SWORD
+        enchants:
+          DAMAGE_ALL: 3
+      - type: GOLDEN_APPLE
+        amount: 3
+      - type: ENDER_PEARL
+        amount: 2

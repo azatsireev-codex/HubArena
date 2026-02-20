@@ -1,0 +1,36 @@
+arena:
+  corner1:
+    x: -230
+    y: 30
+    z: 360
+  corner2:
+    x: -350
+    y: 158
+    z: 470
+
+teleportPoints:
+  - x: -252
+    y: 61
+    z: 394
+  - x: -280
+    y: 71
+    z: 395
+  - x: -268
+    y: 71
+    z: 419
+
+exitLocation:
+  x: -202
+  y: 65
+  z: 356
+
+top-display:
+  enabled: true
+  location:
+    world: "hub"
+    x: -202.5
+    y: 69.0
+    z: 352.5
+  update-interval: 30
+  title: "§6🏆 Топ 10 Игроков §6🏆"
+  format: "§e#%position% §f%player% §7- §a%rating% очков"

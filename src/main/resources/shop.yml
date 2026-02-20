@@ -1,0 +1,18 @@
+shop:
+  - name: "Золотое яблоко"
+    material: GOLDEN_APPLE
+    price1: 20
+    price2: 200
+    mode: ONLY_PVP
+
+  - name: "Железный меч"
+    material: IRON_SWORD
+    price1: 40
+    price2: 400
+    mode: ONLY_LOBBY
+
+  - name: "Тотем бессмертия"
+    material: TOTEM_OF_UNDYING
+    price1: 100
+    price2: 1000
+    mode: BOTH

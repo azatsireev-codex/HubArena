@@ -1,0 +1,11 @@
+name: HubArena
+version: 1.0
+main: net.akat.Main
+api-version: 1.21
+depend:
+  - AkatPointauc
+  - packetevents
+  - PlaceholderAPI
+commands:
+  pvp:
+  reloadconfig:
